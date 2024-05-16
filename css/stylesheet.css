@@ -11,6 +11,13 @@ header{
     position: static;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 #homePic {
     background-image: url(../media/12022300.JPG);
 }
