@@ -41,7 +41,7 @@ h1 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     color: #F2E86D;
-    font-size: 500%;
+    font-size: 5vmin;
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -67,6 +67,12 @@ nav {
     text-align: center;
 }
 
+img{
+    width: 40vw;
+    height: 40vh;
+    object-fit: contain
+}
+
 .navText {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -74,7 +80,7 @@ nav {
     text-align: center;
     padding: 14px 16px;
     display: inline-block;
-    font-size: 200%;
+    font-size: 2vmin;
 
 }
 
@@ -99,7 +105,7 @@ p {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
-    font-size: 200%;
+    font-size: 2vmin;
     
 }
 
