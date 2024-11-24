@@ -27,6 +27,12 @@ header{
     background-image: url(../media/photographyPics/shipSunk.JPG);
 }
 
+#flightTracker {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     background-color: #98D2EB;
 }
