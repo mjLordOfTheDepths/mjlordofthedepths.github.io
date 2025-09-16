@@ -12,6 +12,16 @@ body {
     padding-bottom: 3em;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/*Clippy */
+
 #intro {
     position: fixed;
     right: 0;
@@ -41,6 +51,15 @@ body {
     margin-bottom: 2%;
 }
 
+#clippy-advice {
+    position: fixed;
+    bottom: 20%;
+    right: 2.5%;
+    margin-left: 50%;
+}
+
+/* Desktop Icons */
+
 .icons {
     text-align: center;
     margin-right: 90%;
@@ -59,6 +78,29 @@ body {
     text-decoration: none;
     -webkit-text-stroke: black 0.33px;
 }
+
+.icons > a {
+    position: relative;
+    display: inline-block;
+}
+
+/* Icon Hover Effect */
+
+.icons > a::after {
+    content: "";
+    position: absolute;
+    top: 10%; left: 20%; right: 20%; bottom: 20%;
+    background: rgba(255,255,255,0.2); 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.icons > a:hover::after {
+    opacity: 1;
+}
+
+/* Taskbar */
 
 footer {
     background-color: #c0c0c0;
@@ -82,6 +124,35 @@ footer {
     width: 4vw;
 }
 
+#program {
+    float: left;
+    width: 6.5vw;
+    margin-left: 1%;
+    margin-top: -0.25%;
+    text-align: left;
+    display: flex;
+    gap: 5%;
+    margin-top: -0.05%;
+    border-top: white 2px solid;
+    border-left: white 2px solid;
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+
+}
+
+#program img {
+    width: 1.5vw;
+    height: 1.5vw;
+    padding-bottom: 2%;
+}
+
+#program p {
+    margin-top: 9%;
+    
+}
+
+/* Windows Tabs */
+
 .windows-tab {
     background-color: #c0c0c0;
     display: inline-block;
@@ -96,14 +167,6 @@ footer {
     border-left: white 2px solid;
     border-bottom: black 2px solid;
     border-right: black 2px solid;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 #intro, .icons, footer {
@@ -132,6 +195,7 @@ html, body {
     margin-top: -20%;
     margin-right: 20%;
     margin-left: -20%;
+    pointer-events: none;
 }
 
 #projects-list p {
@@ -149,11 +213,9 @@ html, body {
     border: black 2px solid;
     margin-right: 3px;
     margin-bottom: 3px;
+    width: 50%;
 }
 
-#clippy-advice {
-    position: fixed;
-    bottom: 20%;
-    right: 2.5%;
-    margin-left: 50%;
+#projects {
+    font-size: 0.7vw;
 }
