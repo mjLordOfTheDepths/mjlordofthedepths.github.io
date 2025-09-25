@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/x-icon" href="../images/icons/computer.ico">
+    <script src="../scripts/time.js"></script>
+    <script src="../scripts/windows.js"></script>
     <title>My Projects</title>
 </head>
 <body>
@@ -45,11 +47,11 @@
                 <div id = "projects">
                     <img id = "project-image" src = "../images/flightTracker.png" alt="folder icon">
                     <h3>flightTracker</h3>
-                    <p>A piece of flight tracking software created in Rust using the Aviation Stack API.
-                        It is a piece of software that allows users to input a flight number [ICAO], and get information on said flight.
-                        When there is a change in flight status [e.g: the flight lands for instance] the user will get a notification.<br><br>
-                        I came up with the idea while working in taxi-dispatch, as the software we were using would allow the user to input flight numbers and link them to bookings, 
-                        but it would not connect to any API in order to give the dispatcher notifications in relation to the flight, 
+                    <p>A piece of flight tracking software<br> created in Rust using the Aviation Stack API.<br>
+                        It is a piece of software that allows<br> users to input a flight number [ICAO], and get information on said flight.<br>
+                        When there is a change in flight status<br> [e.g: the flight lands for instance] the user will get a notification.<br><br>
+                        I came up with the idea while working in<br> taxi-dispatch, as the software we were using would allow the user to input flight numbers and link them to bookings,<br>
+                        but it would not connect to any API in order<br> to give the dispatcher notifications in relation to the flight, <br>
                         which proved problematic on a few occasions.
                     </p>
                 </div>
@@ -78,7 +80,8 @@
             <img src="../images/my_computer.png" alt="computer icon">
             <p>My Projects</p>
         </div>
-        <p id = "time">HH/MM<br>MM/DD/YYYY</p>
+        <p id = "time">HH:MM</p>
+        <p id = "date">MM/DD/YYYY</p>
     </footer>
 </body>
 </html>

@@ -114,9 +114,17 @@ footer {
     border-top: white 2px solid;
 }
 
-#time {
+#time, #date {
     text-align: right;
     margin-right: 2%;
+}
+
+#date {
+    margin-top: 0px;
+}
+
+#time {
+    margin-bottom: 2px;
 }
 
 #start {
@@ -137,6 +145,7 @@ footer {
     border-left: white 2px solid;
     border-bottom: black 2px solid;
     border-right: black 2px solid;
+    cursor: pointer;
 
 }
 
@@ -144,10 +153,12 @@ footer {
     width: 1.5vw;
     height: 1.5vw;
     padding-bottom: 2%;
+    pointer-events: none;
 }
 
 #program p {
     margin-top: 9%;
+    pointer-events: none;
     
 }
 
@@ -177,6 +188,7 @@ footer {
 
 .tab-bar {
     background-color:#000080;
+    pointer-events: auto !important;
 }
 
 
